@@ -1,0 +1,13 @@
+.page-button {
+  padding: 18px;
+  background: #eff0f0;
+  cursor: pointer;
+  border-radius: 6px;
+  display: inline-flex;
+  &__arrow_next {
+    transform: rotate(-90deg);
+  }
+  &__arrow_prev {
+    transform: rotate(90deg);
+  }
+}
