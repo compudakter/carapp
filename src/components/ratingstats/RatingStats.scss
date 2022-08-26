@@ -1,0 +1,30 @@
+.rating-stats {
+  display: flex;
+  align-items: center;
+  &__wrapper {
+    display: flex;
+  }
+
+  &__recommend {
+    margin-right: 27px;
+  }
+  &__recommend-text {
+    margin-right: 5px;
+  }
+  &__recommend-value {
+  }
+
+  &__value {
+    background: #55bc6b;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    padding: 2px 6px;
+    color: #ffffff;
+  }
+  &__rating {
+    margin-right: 10px;
+  }
+}
