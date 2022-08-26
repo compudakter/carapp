@@ -1,0 +1,21 @@
+.rating {
+  &__star-button {
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+  }
+}
+
+.star-button {
+  &_active {
+    path {
+      fill: #ffb800;
+    }
+  }
+  &_editable:hover {
+    cursor: pointer;
+    path {
+      fill: #ffb800;
+    }
+  }
+}
