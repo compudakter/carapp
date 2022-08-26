@@ -1,8 +1,6 @@
 import { FC, useState } from "react";
+import { getBlockClass } from "../../utils/utils";
 import "./ReviewCard.scss";
-
-const getBlockClass = (element: string, blockName?: string) =>
-  blockName ? `${blockName}__${element}` : "";
 
 interface ReviewCardProps {
   name: string;
@@ -12,8 +10,9 @@ interface ReviewCardProps {
 export const ReviewCard: FC<ReviewCardProps> = ({ name, text }) => {
   const [details, showDetails] = useState(false);
   const textClass = details ? `review-card__text_open` : "";
+  const cardClass = details ? `review-card_active` : "";
   return (
-    <div className="review-card">
+    <div className={`review-card ${cardClass}`}>
       <div className="review-card__video">
         <Play blockName="review-card" />
       </div>

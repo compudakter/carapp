@@ -1,6 +1,6 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { ReviewCard } from "../components/ui/reviewcard/ReviewCard";
+import { ReviewCard } from "../components/reviewcard/ReviewCard";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
