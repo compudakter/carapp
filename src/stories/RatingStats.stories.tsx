@@ -23,3 +23,9 @@ RatingItem.args = {
   rating: 4.5,
   size: "sm",
 };
+export const RatingItemLarge = Template.bind({});
+RatingItemLarge.args = {
+  percent: 90,
+  rating: 4.5,
+  size: "lg",
+};

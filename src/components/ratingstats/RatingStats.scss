@@ -27,4 +27,27 @@
   &__rating {
     margin-right: 10px;
   }
+
+  &_lg {
+    .rating-stats__wrapper {
+      flex-direction: column;
+    }
+    .rating-stats__value {
+      font-size: 43px;
+      line-height: 50px;
+      padding: 5px 20px;
+      border-radius: 10px;
+    }
+    .rating-stats__recommend {
+      margin-bottom: 10px;
+      margin-right: unset;
+    }
+    .rating-stats__wrapper {
+      margin-right: 27px;
+    }
+    .rating-stats__rating {
+      margin-right: unset;
+      text-align: center;
+    }
+  }
 }

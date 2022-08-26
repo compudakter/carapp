@@ -14,8 +14,9 @@ export const RatingStats: FC<RatingStatsProps> = ({
   percent,
   size,
 }) => {
+  const sizeClass = size ? `rating-stats_${size}` : "";
   return (
-    <div className="rating-stats">
+    <div className={`rating-stats ${sizeClass}`}>
       <div className="rating-stats__wrapper">
         <div className="rating-stats__recommend">
           <span className="rating-stats__recommend-text">Рекомендуют</span>
