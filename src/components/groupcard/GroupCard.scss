@@ -1,0 +1,23 @@
+.group-card {
+  display: flex;
+  padding: 28px 25px;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 450px;
+  height: 320px; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__bottom {
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color:#ffffff;
+  }
+
+  &__title {
+  }
+}
