@@ -1,7 +1,6 @@
 .arrow-button {
   position: relative;
   display: inline-block;
-
   &__wrapper {
     display: flex;
   }
@@ -11,9 +10,10 @@
     line-height: 16px;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     padding: 10px 0 10px 20px;
     color: white;
+    flex-grow: 1;
   }
   &__arrow {
     width: 20px;

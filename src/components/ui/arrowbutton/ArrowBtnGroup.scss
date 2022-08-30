@@ -1,5 +1,7 @@
 .arrow-btn-group {
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
   .arrow-button:not(:first-child) {
     margin-left: -20px;
 

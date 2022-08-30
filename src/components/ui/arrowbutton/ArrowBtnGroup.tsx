@@ -13,6 +13,7 @@ export const ArrowBtnGroup: FC<ArrowBtnGroupProps> = ({ children }) => {
         marginLeft: idx !== 0 ? "-20px" : 0,
         zIndex: children.length - idx,
         position: "relative",
+        flexGrow: "1",
       };
       console.log("style=====", styleObj);
       return React.cloneElement(child, {
