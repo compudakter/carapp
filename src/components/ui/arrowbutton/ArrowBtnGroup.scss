@@ -1,0 +1,10 @@
+.arrow-btn-group {
+  display: flex;
+  .arrow-button:not(:first-child) {
+    margin-left: -20px;
+
+    .arrow-button__content {
+      padding-left: 40px;
+    }
+  }
+}
