@@ -1,4 +1,6 @@
 import { FC } from "react";
+import { ArrowBtnGroup } from "../ui/arrowbutton/ArrowBtnGroup";
+import { ArrowButton } from "../ui/arrowbutton/ArrowButton";
 import "./CarCard.scss";
 
 interface CarProps {
@@ -27,7 +29,13 @@ export const CarCard: FC<CarCardProps> = ({ title }) => {
           <div className="car-card__controls-item">2</div>
         </div>
         <div className="car-card__body"></div>
-        <div className="car-card__footer"></div>
+        <div className="car-card__footer">
+          <ArrowBtnGroup>
+            <ArrowButton variant="primary">Резерв онлайн</ArrowButton>
+            <ArrowButton variant="dark">Купить</ArrowButton>
+            <ArrowButton variant="light">Подробнее</ArrowButton>
+          </ArrowBtnGroup>
+        </div>
       </div>
     </div>
   );
