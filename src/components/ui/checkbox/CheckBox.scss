@@ -1,0 +1,35 @@
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+
+  &__input {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  &__element {
+    position: relative;
+    display: inline-flex;
+    margin-right: 25px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 1px solid #ca0100;
+    border-radius: 2px;
+    user-select: none;
+    &_active {
+      background: #ca0100;
+    }
+  }
+  &__check-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,42 @@
+.arrow-button {
+  position: relative;
+  display: inline-block;
+  &__wrapper {
+    display: flex;
+  }
+  &__content {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 10px 20px;
+    color: white;
+    flex-grow: 1;
+  }
+  &__arrow {
+    width: 20px;
+    background: #ca0100;
+    clip-path: polygon(0% 0%, 60% 0%, 100% 50%, 60% 100%, 0% 100%);
+  }
+
+  &_primary {
+    .arrow-button__content,
+    .arrow-button__arrow {
+      background: #ca0100;
+    }
+  }
+  &_light {
+    .arrow-button__content,
+    .arrow-button__arrow {
+      background: #737373;
+    }
+  }
+  &_dark {
+    .arrow-button__content,
+    .arrow-button__arrow {
+      background: #262626;
+    }
+  }
+}

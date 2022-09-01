@@ -1,0 +1,38 @@
+.point {
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    &_primary {
+      background: #ca0100;
+    }
+    &_dark {
+      background: #262626;
+    }
+    &_light {
+      background: #737373;
+    }
+    border-radius: 50%;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  &__title {
+  }
+
+  &__label {
+    color: #ca0100;
+  }
+}
