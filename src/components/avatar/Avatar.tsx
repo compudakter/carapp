@@ -1,5 +1,5 @@
-import { FC } from "react"
-import { getBlockClass } from "../../utils/common";
+import { FC } from "react" 
+import { getBlockClass } from "../../utils/utils";
 import './Avatar.scss';
 
 interface AvatarProps{

@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { getBlockClass } from "../../utils/utils";
 import "./Point.scss";
 type PointVariant = "primary" | "light" | "dark";
 type PointType = "gift";
@@ -8,9 +9,10 @@ interface PointProps {
   title: string;
   label: string;
   type: PointType;
+  block?:string
 }
 
-export const Point: FC<PointProps> = ({ variant, label, title, type }) => {
+export const Point: FC<PointProps> = ({ variant, label, title,block, type }) => {
   const renderIcon = () => {
     switch (type) {
       case "gift":
@@ -19,8 +21,9 @@ export const Point: FC<PointProps> = ({ variant, label, title, type }) => {
     return null;
   };
   const variantClass = type ? `point__icon_${variant}` : "";
+  const blockClass = getBlockClass('point',block)
   return (
-    <div className="point">
+    <div className={`${blockClass} point  `}>
       <div className={`point__icon ${variantClass}`}>{renderIcon()}</div>
       <div className="point__content">
         <div className="point__title">{title}</div>
